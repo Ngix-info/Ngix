@@ -24,7 +24,9 @@ function getOption() {
   obj.options[obj.selectedIndex].text;
 }
 </script>
+
       <link href="https://ngix-info.github.io/Ngix/in.css" media="screen" rel="stylesheet" type="text/css">
+      
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 </div>
@@ -96,10 +98,58 @@ function getOption() {
         &copy; <span id="year">2020</span> NGINX | Ajor. All rights reserved.
       </footer>
     </div>
-  <script type="text/javascript">
-
-  </script>
-  <script type="text/javascript">
-
-  </script>
+	<style>
+	h1,h2,p,a{
+		font-family: sans-serif;
+		font-weight: normal;
+	}
+ 
+	.jam-digital-malasngoding {
+		overflow: hidden;
+		width: 330px;
+		margin: 10px auto;
+		border: 9px solid #efefef;
+	}
+	.kotak{
+		float: left;
+		width: 110px;
+		height: 50px;
+		background-color: #189fff;
+	}
+	.jam-digital-malasngoding p {
+		color: #fff;
+		font-size: 26px;
+		text-align: center;
+		margin-top: 10px;
+	}
+ 
+ 
+</style>
+<div class="jam-digital-malasngoding">
+	<div class="kotak">
+		<p id="jam"></p>
+	</div>
+	<div class="kotak">
+		<p id="menit"></p>
+	</div>
+	<div class="kotak">
+		<p id="detik"></p>
+	</div>
+</div>
+ 
+<center>
+	<a href="https://www.malasngoding.com/membuat-jam-analog-dan-digital-dengan-javascript">TUTORIAL</a>
+</center>
+ 
+<script>
+	window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+</script>
 </body></html>
