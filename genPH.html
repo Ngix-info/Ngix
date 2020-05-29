@@ -13,6 +13,16 @@
 </div>
   </head>
   <body>
+	  <style type="text/css">
+#gb{ position:fixed; top:10px; z-index:+1000; } * html #gb{position:relative;} .gbcontent{ float:left;margin-left:620px; border:5px solid #32CD32; background:#778899; padding:30px; } </style> 
+<script type="text/javascript"> 
+function showHideGB(){ var gb = document.getElementById("gb"); var w = gb.offsetWidth; gb.opened ? moveGB(0, 30-w) : moveGB(20-w, 0); gb.opened = !gb.opened; } function moveGB(x0, xf){ var gb = document.getElementById("gb"); var dx = Math.abs(x0-xf) > 10 ? 5 : 1; var dir = xf>x0 ? 1 : -1; var x = x0 + dx * dir; gb.style.top = x.toString() + "px"; if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 10);} } </script> 
+<div id="gb"> 
+<div class="gbtab" onclick="showHideGB()"> 
+</div> <div class="gbcontent"> <div style="text-align:right"> <a href="javascript:showHideGB()">[X]</a> 
+</div>
+  <center>-------------</center>
+<center>GEN PH | LINK GEN gawe phising..!</center> <script type="text/javascript"> var gb = document.getElementById("gb"); gb.style.center = (30-gb.offsetWidth).toString() + "px"; </script>
     <center>
       <script>
 function getOption() {
